@@ -49,7 +49,7 @@ export class EmployeeaddComponent implements OnInit {
       this.empId= +this.ActivateRoute.snapshot.params['id'];
       
       if(this.empId){
-       this.allowEdit=true;
+      this.allowEdit=true;
       this.employeeData=this.employee.getEmployee(this.empId);
       this.empName=this.employeeData.name;
       this.empDesignation=this.employeeData.designation;
